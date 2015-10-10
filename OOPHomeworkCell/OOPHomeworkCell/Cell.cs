@@ -16,6 +16,7 @@ namespace OOPHomeworkCell
             Value = rnd.Next(1, 100);
         }
 
+        public bool Visited { get; set; }
         public Cell Top { get; set; }
         public Cell Bottom { get; set; }
         public Cell Left { get; set; }
