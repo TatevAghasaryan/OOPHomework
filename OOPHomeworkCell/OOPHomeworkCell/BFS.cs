@@ -26,11 +26,12 @@ namespace OOPHomeworkCell
                     else
                     {
                         continue;
-                    }
+                    } 
                 
                 }
-
-            } 
+                
+            }
+            
             foreach (var item in queue)
             {
                 Console.Write(" " + item);
