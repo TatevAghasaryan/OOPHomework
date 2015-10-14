@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -10,8 +11,7 @@ namespace SingletonDesignPattern
     {
         static void Main(string[] args)
         {
-            string a = "5" + 1;
-            Console.WriteLine(a);
+            HttpClientInstance c = HttpClientInstance.GetHtml();
             Console.ReadKey();
         }
     }

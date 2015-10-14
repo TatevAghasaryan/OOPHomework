@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
 VisualStudioVersion = 12.0.31101.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SingletonDesignPattern", "SingletonDesignPattern\SingletonDesignPattern.csproj", "{C57994FF-F1CB-414E-B287-1D4B1BA44773}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HttpClientInstance", "SingletonDesignPattern\HttpClientInstance.csproj", "{C57994FF-F1CB-414E-B287-1D4B1BA44773}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
