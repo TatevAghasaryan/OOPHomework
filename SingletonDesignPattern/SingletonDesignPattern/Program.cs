@@ -9,9 +9,30 @@ namespace SingletonDesignPattern
 {
     class Program
     {
+        public static async void GetHtml()
+        {
+            using (HttpClient client = new HttpClient())
+            {
+                try
+                {
+                    HttpResponseMessage message = await client.GetAsync("http://www.micarmenia.am/");
+                    string result = await message.Content.ReadAsStringAsync();
+                    Console.WriteLine(result);
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine(ex.Message);
+                }
+            }
+        }
         static void Main(string[] args)
         {
-            HttpClientInstance c = HttpClientInstance.GetHtml();
+
+            HttpClientInstance c1 = HttpClientInstance.Instance;
+            HttpClientInstance c2 = HttpClientInstance.Instance;
+
+            Console.WriteLine(object.ReferenceEquals(c1,c2));
+            
             Console.ReadKey();
         }
     }
