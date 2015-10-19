@@ -12,12 +12,10 @@ namespace SingletonDesignPattern
         
         static void Main(string[] args)
         {
-            HtmlSource html = new HtmlSource();
+            Singleton s1 = Singleton.Instance;
+            Singleton s2 = Singleton.Instance;
 
-            HttpClientInstance c1 = HttpClientInstance.Instance;
-            HttpClientInstance c2 = HttpClientInstance.Instance;
-
-            Console.WriteLine(object.ReferenceEquals(c1,c2));
+            Console.WriteLine(object.ReferenceEquals(s1,s2));
             Console.ReadKey();
         }
     }
